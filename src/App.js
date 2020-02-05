@@ -1,32 +1,16 @@
 import React from "react";
 import "./App.css";
 import { useState } from "react";
+import " ./styles.css";
 
-const axios = required('axios');
 
-function getNasaData() {
-  axios.get('http://api.github.com/users/sincere27601')
-  .then(res => {
-    console.log(err);
-  });
+function stars() {
+  const [isStarslit, setIsStarsLit] = useState
+  if (isStarslit){
+    return <div> The stars are Litty </div>
+  }
+   return <div> The stars have blackholes </div>
 }
 
-function User({ id }) {
-  const [user, setUser] = useState("");
-  const fetchUser = (id) =>
-  fetch(``)
-}
-
-
-function App() {
-  return (
-    <div className="App">
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun 🚀!
-      </p>
-    </div>
-  );
-}
-
-export default App;
+const rootElement = document.getElementById("root");
+ReactDOM.render(<stars />, rootElement);

@@ -1,20 +1,34 @@
-import React, { useState, useEffect} from "react";
+import React from "react";
 import ReactDOM from "react-dom";
-import "./styles.css";
-import App from "./App";
-import StarCard from " ./components/StarCard";
+import styled from "styled-components";
+import Button from './Button';
 
 //Styled Components
 
-const StarCard = styled.div`
-background: #99f3eb;
-color: black;
-width: 200px;
-max - height: 300px;
-display: flex;
-flex - direction: column;
-align - items: center;
-justify - content: space - between;
-margin - bottom: 20px;
+const WrapperDiv = styled.div`
+   font-family: sans-serif;
+   text-align; center;
 `;
+
+const BlueH1 = styled.h1`
+   color: #2F4F4F;
+`;
+
+function App() {
+    return (
+        <wrapperDiv>
+            <BlueH1>Stars Are Awesome</BlueH1>
+            <Button type="Primary">Primary</Button>
+            <Button type="success">success</Button>
+            <Button type="danger">danger</Button>
+            <Button type="warning">warning</Button>
+            
+        </wrapperDiv>
+    );
+}
+
+const rootElement = document.getElementById("root");
+ReactDOM.render(<App />, rootElement);
+
+
 

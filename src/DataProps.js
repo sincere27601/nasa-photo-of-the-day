@@ -10,6 +10,3 @@ function App(props){
 }
 
 
-
-const rootElemennt = document.getElementById("root");
-ReactDOM.render(<app friends = {siths} />, rootElement);
